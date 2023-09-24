@@ -1,0 +1,18 @@
+#pasta com código compilado (bytecode) em cache
+__pycache__/
+#código compilado ou arquivos para otimização
+*.py[cod]
+#código compilado para Jython
+*$py.class
+
+#a base de dados SQLite
+db.sqlite3
+
+#o arquivo .env
+.env
+
+#do MacOS
+.DS_Store
+
+#arquivos de log
+*.log
