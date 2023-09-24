@@ -83,11 +83,11 @@ WSGI_APPLICATION = "filmes_project.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pessoal_pdfs_rest_filmes',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': env('DATABASE_DEFAULT_NAME'),
+        'USER': env('DATABASE_DEFAULT_USER'),
+        'PASSWORD': env('DATABASE_DEFAULT_PASSWORD'),
+        'HOST': env('DATABASE_DEFAULT_HOST'),
+        'PORT': env('DATABASE_DEFAULT_PORT'),
     }
 }
 
